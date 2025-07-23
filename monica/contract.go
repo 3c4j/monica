@@ -29,7 +29,7 @@ type ProviderCronJob interface {
 }
 
 type ProviderShutdown interface {
-	ProvideShutdown() func(ctx context.Context) error
+	Shutdown(ctx context.Context) error
 }
 
 type Runnable interface {

@@ -25,7 +25,7 @@ build:
 	@echo "Building..."
 	@rm -rf bin/*
 	@mkdir -p bin
+	@make wire
 	@go build -ldflags "$(LDFLAGS)" -o bin/ ./...
-    # 扫描 bin 目录, 展示构建成功的可执行文件
 	@echo "Build success."
 	@echo "$(foreach file,$(wildcard ./bin/*),"\\t"$(file))"

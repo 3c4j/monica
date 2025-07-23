@@ -5,7 +5,9 @@ import "github.com/spf13/viper"
 type Config struct {
 	Mode string `mapstructure:"mode"`
 	Log  struct {
-		Level string `mapstructure:"level"`
+		Level  string `mapstructure:"level"`
+		Format string `mapstructure:"format"`
+		Output string `mapstructure:"output"`
 	} `mapstructure:"log"`
 }
 
