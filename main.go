@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"flag"
 	"fmt"
 	"log"
 
@@ -31,8 +30,7 @@ var (
 )
 
 func init() {
-	flag.StringVar(&configPath, "config", "./config.yaml", "config file (default is ./config.yaml)")
-	flag.Parse()
+	rootCmd.PersistentFlags().StringVar(&configPath, "config", "./config.yaml", "config file (default is ./config.yaml)")
 }
 
 func main() {
