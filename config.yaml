@@ -1,0 +1,4 @@
+mode: "dev" # dev, prod
+
+log:
+  level: "debug"

@@ -1,0 +1,5 @@
+.idea
+*.local.yaml
+bin
+*.http
+*.db
